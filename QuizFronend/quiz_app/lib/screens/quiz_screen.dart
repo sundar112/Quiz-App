@@ -19,7 +19,7 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   Future<void> fetchQuestions() async {
-    final response = await http.get(Uri.parse('http://10.0.2.2:5000/questions'));
+    final response = await http.get(Uri.parse('http://192.168.1.180:5000/questions'));
     if (response.statusCode == 200) {
       setState(() {
         questions = json.decode(response.body);

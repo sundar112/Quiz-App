@@ -1,6 +1,6 @@
+
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
-import 'screens/home_screen.dart';
+import 'screens/home_screen.dart'; // Import HomeScreen
 
 void main() {
   runApp(MyApp());
@@ -11,12 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Quiz App',
+      title: 'MCQ Quiz App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: LoginScreen(),
-      routes: {
-        '/home': (context) => HomeScreen(),
-      },
+      home: HomeScreen(), // Load HomeScreen directly
     );
   }
 }
