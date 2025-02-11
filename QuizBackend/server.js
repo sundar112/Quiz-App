@@ -95,14 +95,28 @@ app.get("/user", authMiddleware, async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+// app.get("/questions", async (req, res) => {
+//   try {
+//     const allQuestions = await Question.find({});
+//     res.json(allQuestions); // Send the response
+//   } catch (error) {
+//     res.status(500).json({ error: "Internal Server Error" });
+//   }
+// });
 app.get("/questions", async (req, res) => {
   try {
-    const allQuestions = await Question.find({});
-    res.json(allQuestions); // Send the response
+    const difficulty = req.query.difficulty;
+    console.log("Requested Difficulty:", difficulty);  // Debugging line
+    const filter = difficulty ? { difficulty } : {};
+
+    const allQuestions = await Question.find(filter);
+    res.json(allQuestions);
   } catch (error) {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
