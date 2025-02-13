@@ -1,25 +1,8 @@
-// import 'package:flutter/material.dart';
-// import 'quiz_screen.dart';
-
-// class HomeScreen extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: Text("Home")),
-//       body: Center(
-//         child: ElevatedButton(
-//           onPressed: () {
-//             Navigator.push(context, MaterialPageRoute(builder: (context) => QuizScreen()));
-//           },
-//           child: Text("Start Quiz"),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'quiz_screen.dart';
+import 'menu_drawer.dart';
+import 'background_image.dart';
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -27,24 +10,33 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   String? selectedLevel;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: Color(0xFFE6F4E6),
+      
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         actions: [
           IconButton(
             icon: Icon(Icons.menu, color: Colors.red),
-            onPressed: () {},
+            onPressed: () {
+              _scaffoldKey.currentState?.openEndDrawer(); // ✅ Fixed here
+            },
           ),
         ],
       ),
-      body: Padding(
+      endDrawer: MenuDrawer(), // ✅ Right-side drawer
+      body: Padding (
         padding: const EdgeInsets.all(20.0),
+        child: BackgroundImage(
+        imagePath: "assets/dhammadigital-logo.png",
+        
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -54,15 +46,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: 5),
             Text(
-              "50",
+              "0",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
             Align(
               alignment: Alignment.centerLeft,
-              child: Text("Quiz Level", style: TextStyle(fontSize: 18)),
+              child: Text("Quiz Level", style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold)),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 12),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -79,8 +71,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => QuizScreen(difficulty: selectedLevel!), 
-
+                          builder: (context) =>
+                              QuizScreen(difficulty: selectedLevel!),
                         ),
                       );
                     },
@@ -98,6 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
         ),
+        )
       ),
     );
   }

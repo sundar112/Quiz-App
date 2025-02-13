@@ -1,131 +1,14 @@
+import 'dart:math'; // ✅ Import for shuffling
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import '../data/questions.dart'; // ✅ Import local questions data
 
-// class QuizScreen extends StatefulWidget {
-//   @override
-//   _QuizScreenState createState() => _QuizScreenState();
-// }
+import 'package:quiz_app/screens/background_image.dart';
 
-// class _QuizScreenState extends State<QuizScreen> {
-//   List questions = [];
-//   int currentIndex = 0;
-//   int score = 0;
-//   String? selectedAnswer;
-
-//   @override
-//   void initState() {
-//     super.initState();
-//     fetchQuestions();
-//   }
-
-//   Future<void> fetchQuestions() async {
-//     final response = await http.get(Uri.parse('http://192.168.1.180:5000/questions'));
-//     if (response.statusCode == 200) {
-//       setState(() {
-//         questions = json.decode(response.body);
-//       });
-//     } else {
-//       throw Exception('Failed to load questions');
-//     }
-//   }
-
-//   void checkAnswer() {
-//     if (selectedAnswer == questions[currentIndex]['correctAnswer']) {
-//       score++;
-//     }
-
-//     if (currentIndex < questions.length - 1) {
-//       setState(() {
-//         currentIndex++;
-//         selectedAnswer = null;
-//       });
-//     } else {
-//       showDialog(
-//         context: context,
-//         builder: (context) => AlertDialog(
-//           title: Text("Quiz Completed"),
-//           content: Text("Correct: $score\nIncorrect: ${questions.length - score}"),
-//           actions: [
-//             TextButton(onPressed: () => Navigator.pop(context), child: Text("OK"))
-//           ],
-//         ),
-//       );
-//     }
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Color(0xFFE6F4E6),
-//       body: questions.isEmpty
-//           ? Center(child: CircularProgressIndicator())
-//           : Padding(
-//               padding: const EdgeInsets.all(20.0),
-//               child: Column(
-//                 crossAxisAlignment: CrossAxisAlignment.start,
-//                 children: [
-//                   Center(
-//                     child: Text(
-//                       "Quiz: name Buddha Jeewani",
-//                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-//                     ),
-//                   ),
-//                   SizedBox(height: 10),
-//                   Row(
-//                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                     children: [
-//                       Text("Level Easy", style: TextStyle(fontSize: 16)),
-//                       Text("Score: ${score.toString().padLeft(2, '0')}", style: TextStyle(fontSize: 16)),
-//                     ],
-//                   ),
-//                   SizedBox(height: 20),
-//                   Text(
-//                     "Question No ${currentIndex + 1}",
-//                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-//                   ),
-//                   SizedBox(height: 10),
-//                   Text(
-//                     questions[currentIndex]['question'],
-//                     style: TextStyle(fontSize: 18, color: Colors.blue.shade900, fontWeight: FontWeight.bold),
-//                   ),
-//                   SizedBox(height: 20),
-//                   ...questions[currentIndex]['options'].map<Widget>((option) {
-//                     return RadioListTile(
-//                       title: Text(option),
-//                       value: option,
-//                       groupValue: selectedAnswer,
-//                       onChanged: (value) {
-//                         setState(() {
-//                           selectedAnswer = value.toString();
-//                         });
-//                       },
-//                     );
-//                   }).toList(),
-//                   Spacer(),
-//                   Center(
-//                     child: ElevatedButton(
-//                       onPressed: selectedAnswer == null ? null : checkAnswer,
-//                       style: ElevatedButton.styleFrom(
-//                         backgroundColor: Colors.redAccent,
-//                         minimumSize: Size(double.infinity, 50),
-//                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-//                       ),
-//                       child: Text(
-//                         "Next",
-//                         style: TextStyle(color: Colors.white, fontSize: 18),
-//                       ),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//             ),
-//     );
-//   }
-// }
 
 class QuizScreen extends StatefulWidget {
-  final String difficulty; // Added difficulty parameter
+  final String difficulty;
 
   QuizScreen({required this.difficulty});
 
@@ -138,59 +21,94 @@ class _QuizScreenState extends State<QuizScreen> {
   int currentIndex = 0;
   int score = 0;
   String? selectedAnswer;
+  bool answerSelected = false;
+/*************this part is for API calls if you want to fetch data from backend**************/
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   fetchQuestions();
+  // }
 
-  @override
-  void initState() {
-    super.initState();
-    fetchQuestions();
+  // Future<void> fetchQuestions() async {
+  //   try {
+  //     final response = await http.get(Uri.parse('http://10.0.2.2:5000/questions?difficulty=${widget.difficulty}'));
+  //     if (response.statusCode == 200) {
+  //       List fetchedQuestions = json.decode(response.body);
+  //       fetchedQuestions.shuffle(); // ✅ Shuffle the questions list
+  //       setState(() {
+  //         questions = fetchedQuestions;
+  //       });
+  //     } else {
+  //       throw Exception('Failed to load questions');
+  //     }
+  //   } catch (e) {
+  //     print('Error fetching questions: $e');
+  //     showDialog(
+  //       context: context,
+  //       builder: (context) => AlertDialog(
+  //         title: Text("Error"),
+  //         content: Text("Unable to load questions. Please check your connection or try again later."),
+  //         actions: [
+  //           TextButton(
+  //             onPressed: () => Navigator.pop(context),
+  //             child: Text("OK"),
+  //           )
+  //         ],
+  //       ),
+  //     );
+  //   }
+  // }
+  /*************this part is for API calls if you want to fetch data from backend**************/
+
+  /*************this part is for local data call**************/
+  void loadQuestions() {
+  setState(() {
+    questions = questionsData
+        .where((q) => q['difficulty'] == widget.difficulty) // ✅ Filter by difficulty
+        .toList();
+    questions.shuffle(); // ✅ Randomize questions
+  });
+}
+initState() {
+  super.initState();
+  loadQuestions(); // ✅ Load local data instead
+}
+/*************this part is for local data call**************/
+
+
+  void checkAnswer(String answer) {
+    if (answerSelected) return;
+
+    setState(() {
+      selectedAnswer = answer;
+      answerSelected = true;
+      if (answer == questions[currentIndex]['correctAnswer']) {
+        score++;
+      }
+    });
   }
 
-  Future<void> fetchQuestions() async {
-    try {
-    final response = await http.get(Uri.parse('http://192.168.1.180:5000/questions?difficulty=${widget.difficulty}'));
-    if (response.statusCode == 200) {
-      setState(() {
-        questions = json.decode(response.body);
-      });
-    } else {
-      throw Exception('Failed to load questions');
-    }
-  } catch (e) {
-    print('Error fetching questions: $e');
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Text("Error"),
-        content: Text("Unable to load questions. Please check your connection or try again later."),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: Text("OK"),
-          )
-        ],
-      ),
-    );
-  }
-  }
-
-  void checkAnswer() {
-    if (selectedAnswer == questions[currentIndex]['correctAnswer']) {
-      score++;
-    }
-
+  void nextQuestion() {
     if (currentIndex < questions.length - 1) {
       setState(() {
         currentIndex++;
         selectedAnswer = null;
+        answerSelected = false;
       });
     } else {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
           title: Text("Quiz Completed"),
-          content: Text("Correct: $score\nIncorrect: ${questions.length - score}"),
+          content: Text("Thank You for your participation \nYour Score: $score\nIncorrect: ${questions.length - score}"),
           actions: [
-            TextButton(onPressed: () => Navigator.pop(context), child: Text("OK"))
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+                Navigator.pop(context);
+              },
+              child: Text("OK"),
+            )
           ],
         ),
       );
@@ -205,49 +123,62 @@ class _QuizScreenState extends State<QuizScreen> {
           ? Center(child: CircularProgressIndicator())
           : Padding(
               padding: const EdgeInsets.all(20.0),
+              child: BackgroundImage(
+                imagePath: "assets/dhammadigital-logo.png",
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  SizedBox(height: 40),
                   Center(
                     child: Text(
                       "Quiz Level: ${widget.difficulty.toUpperCase()}",
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Score: ${score.toString().padLeft(2, '0')}", style: TextStyle(fontSize: 16)),
+                      Text(
+                        "Question No ${currentIndex + 1}",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
+                      Text("Score: ${score.toString().padLeft(2, '0')}", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 49, 6, 6))),
                     ],
                   ),
-                  SizedBox(height: 20),
-                  Text(
-                    "Question No ${currentIndex + 1}",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                  ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 50),
                   Text(
                     questions[currentIndex]['question'],
-                    style: TextStyle(fontSize: 18, color: Colors.blue.shade900, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 20, color: Colors.blue.shade900, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 10),
                   ...questions[currentIndex]['options'].map<Widget>((option) {
-                    return RadioListTile(
-                      title: Text(option),
-                      value: option,
-                      groupValue: selectedAnswer,
-                      onChanged: (value) {
-                        setState(() {
-                          selectedAnswer = value.toString();
-                        });
-                      },
+                    bool isCorrect = option == questions[currentIndex]['correctAnswer'];
+                    bool isSelected = option == selectedAnswer;
+
+                    return GestureDetector(
+                      onTap: answerSelected ? null : () => checkAnswer(option),
+                      child: Container(
+                        width: double.infinity,
+                        padding: EdgeInsets.all(15),
+                        margin: EdgeInsets.symmetric(vertical: 5),
+                        decoration: BoxDecoration(
+                          color: isSelected
+                              ? (isCorrect ? const Color.fromARGB(117, 76, 175, 79) : const Color.fromARGB(115, 244, 67, 54))
+                              : (answerSelected && isCorrect ? const Color.fromARGB(112, 76, 175, 79) : Color.fromARGB(89, 224, 224, 224)),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text(
+                          option,
+                          style: TextStyle(fontSize: 18, color: Colors.black),
+                        ),
+                      ),
                     );
                   }).toList(),
                   Spacer(),
                   Center(
                     child: ElevatedButton(
-                      onPressed: selectedAnswer == null ? null : checkAnswer,
+                      onPressed: answerSelected ? nextQuestion : null,
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.redAccent,
                         minimumSize: Size(double.infinity, 50),
@@ -261,13 +192,8 @@ class _QuizScreenState extends State<QuizScreen> {
                   ),
                 ],
               ),
+              ),
             ),
     );
   }
 }
-
-Future<void> fetchQuestions() async {
-  
-}
-
-

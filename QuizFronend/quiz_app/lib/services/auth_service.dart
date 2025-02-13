@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
-  final String baseUrl = "http://192.168.1.180:5000"; // ✅ Use "10.0.2.2" for Android Emulator insted of localhost
+  final String baseUrl = "http://10.0.2.2:5000"; // ✅ Use "10.0.2.2" for Android Emulator insted of localhost
 
   Future<bool> login(String email, String password) async {
     try {
