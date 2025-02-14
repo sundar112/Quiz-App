@@ -10,7 +10,10 @@ import 'package:quiz_app/screens/background_image.dart';
 class QuizScreen extends StatefulWidget {
   final String difficulty;
 
-  QuizScreen({required this.difficulty});
+  final Function(bool) onQuizCompleted;
+  QuizScreen({required this.difficulty, required this.onQuizCompleted});
+
+  
 
   @override
   _QuizScreenState createState() => _QuizScreenState();
@@ -22,6 +25,13 @@ class _QuizScreenState extends State<QuizScreen> {
   int score = 0;
   String? selectedAnswer;
   bool answerSelected = false;
+
+  void finishQuiz() {
+  bool isPassed = score == questions.length; // ✅ User must get all correct
+  widget.onQuizCompleted(isPassed); // ✅ Pass result to HomeScreen
+  
+}
+
 /*************this part is for API calls if you want to fetch data from backend**************/
   // @override
   // void initState() {
@@ -96,6 +106,8 @@ initState() {
         answerSelected = false;
       });
     } else {
+      finishQuiz(); // ✅ Notify HomeScreen when quiz is completed
+      
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
