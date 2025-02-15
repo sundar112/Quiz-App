@@ -12,16 +12,18 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   String? selectedLevel;
+  int point = 0;
   Set<String> completedLevels = {}; // Track completed levels
 
   @override
   void initState() {
     super.initState();
-    loadCompletedLevels(); // Load saved progress
+    loadCompletedLevels();
+    loadPoints(); // ✅ Load saved points
   }
 
-  // Load completed levels from SharedPreferences
-  void loadCompletedLevels() async {
+  // ✅ Load completed levels from SharedPreferences
+  Future<void> loadCompletedLevels() async {
     final prefs = await SharedPreferences.getInstance();
     final savedLevels = prefs.getStringList('completedLevels') ?? [];
     setState(() {
@@ -29,23 +31,37 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  // Mark a level as completed and save to SharedPreferences
-  void markLevelCompleted(String level) async {
-    setState(() {
-      completedLevels.add(level);
-    });
-
-    // Save to SharedPreferences
+  // ✅ Load saved points from SharedPreferences
+  Future<void> loadPoints() async {
     final prefs = await SharedPreferences.getInstance();
-    prefs.setStringList('completedLevels', completedLevels.toList());
+    setState(() {
+      point = prefs.getInt('quizPoints') ?? 0; // Default to 0 if no points saved
+    });
   }
 
-  // Clear progress (optional)
-  void clearProgress() async {
+  // ✅ Mark a level as completed and add points
+  Future<void> markLevelCompleted(String level) async {
+    if (!completedLevels.contains(level)) {
+      setState(() {
+        completedLevels.add(level);
+        point += 5; // ✅ Add 5 points
+      });
+
+      // ✅ Save to SharedPreferences
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList('completedLevels', completedLevels.toList());
+      await prefs.setInt('quizPoints', point);
+    }
+  }
+
+  // ✅ Clear progress (reset points and completed levels)
+  Future<void> clearProgress() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove('completedLevels');
+    await prefs.remove('quizPoints'); // ✅ Reset points
     setState(() {
       completedLevels.clear();
+      point = 0;
     });
   }
 
@@ -80,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               SizedBox(height: 5),
               Text(
-                "0",
+                "$point", // ✅ Updated points displayed
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20),
@@ -134,6 +150,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   "Start Quiz",
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
+              ),
+
+              // ✅ Reset Progress Button (optional)
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: clearProgress,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black54,
+                  minimumSize: Size(double.infinity, 40),
+                ),
+                child: Text("Reset Progress"),
               ),
             ],
           ),
