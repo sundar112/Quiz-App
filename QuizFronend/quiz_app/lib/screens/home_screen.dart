@@ -55,15 +55,15 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // ✅ Clear progress (reset points and completed levels)
-  Future<void> clearProgress() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove('completedLevels');
-    await prefs.remove('quizPoints'); // ✅ Reset points
-    setState(() {
-      completedLevels.clear();
-      point = 0;
-    });
-  }
+  // Future<void> clearProgress() async {
+  //   final prefs = await SharedPreferences.getInstance();
+  //   await prefs.remove('completedLevels');
+  //   await prefs.remove('quizPoints'); // ✅ Reset points
+  //   setState(() {
+  //     completedLevels.clear();
+  //     point = 0;
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -153,15 +153,15 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               // ✅ Reset Progress Button (optional)
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: clearProgress,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black54,
-                  minimumSize: Size(double.infinity, 40),
-                ),
-                child: Text("Reset Progress"),
-              ),
+              // SizedBox(height: 20),
+              // ElevatedButton(
+              //   onPressed: clearProgress,
+              //   style: ElevatedButton.styleFrom(
+              //     backgroundColor: Colors.black54,
+              //     minimumSize: Size(double.infinity, 40),
+              //   ),
+              //   child: Text("Reset Progress"),
+              // ),
             ],
           ),
         ),
