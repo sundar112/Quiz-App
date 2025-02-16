@@ -11,7 +11,7 @@ class QuizScreen extends StatefulWidget {
   final String difficulty;
 
   final Function(bool) onQuizCompleted;
-  QuizScreen({required this.difficulty, required this.onQuizCompleted});
+  const QuizScreen({required this.difficulty, required this.onQuizCompleted});
 
   
 
@@ -111,7 +111,7 @@ initState() {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: Text("Quiz Completed"),
+          title: const Text("Quiz Completed"),
           content: Text("Thank You for your participation \nYour Score: $score\nIncorrect: ${questions.length - score}"),
           actions: [
             TextButton(
@@ -119,7 +119,7 @@ initState() {
                 Navigator.pop(context);
                 Navigator.pop(context);
               },
-              child: Text("OK"),
+              child: const Text("OK"),
             )
           ],
         ),
@@ -130,9 +130,9 @@ initState() {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFE6F4E6),
+      backgroundColor: const Color(0xFFE6F4E6),
       body: questions.isEmpty
-          ? Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator())
           : Padding(
               padding: const EdgeInsets.all(20.0),
               child: BackgroundImage(
@@ -140,30 +140,30 @@ initState() {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 40),
+                  const SizedBox(height: 40),
                   Center(
                     child: Text(
                       "Quiz Level: ${widget.difficulty.toUpperCase()}",
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "Question No ${currentIndex + 1}",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
-                      Text("Score: ${score.toString().padLeft(2, '0')}", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 49, 6, 6))),
+                      Text("Score: ${score.toString().padLeft(2, '0')}", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 49, 6, 6))),
                     ],
                   ),
-                  SizedBox(height: 50),
+                  const SizedBox(height: 50),
                   Text(
                     questions[currentIndex]['question'],
                     style: TextStyle(fontSize: 20, color: Colors.blue.shade900, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ...questions[currentIndex]['options'].map<Widget>((option) {
                     bool isCorrect = option == questions[currentIndex]['correctAnswer'];
                     bool isSelected = option == selectedAnswer;
@@ -172,31 +172,31 @@ initState() {
                       onTap: answerSelected ? null : () => checkAnswer(option),
                       child: Container(
                         width: double.infinity,
-                        padding: EdgeInsets.all(15),
-                        margin: EdgeInsets.symmetric(vertical: 5),
+                        padding: const EdgeInsets.all(15),
+                        margin: const EdgeInsets.symmetric(vertical: 5),
                         decoration: BoxDecoration(
                           color: isSelected
                               ? (isCorrect ? const Color.fromARGB(117, 76, 175, 79) : const Color.fromARGB(115, 244, 67, 54))
-                              : (answerSelected && isCorrect ? const Color.fromARGB(112, 76, 175, 79) : Color.fromARGB(89, 224, 224, 224)),
+                              : (answerSelected && isCorrect ? const Color.fromARGB(112, 76, 175, 79) : const Color.fromARGB(89, 224, 224, 224)),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Text(
                           option,
-                          style: TextStyle(fontSize: 18, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black),
                         ),
                       ),
                     );
                   }).toList(),
-                  Spacer(),
+                  const Spacer(),
                   Center(
                     child: ElevatedButton(
                       onPressed: answerSelected ? nextQuestion : null,
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.redAccent,
-                        minimumSize: Size(double.infinity, 50),
+                        minimumSize: const Size(double.infinity, 50),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Next",
                         style: TextStyle(color: Colors.white, fontSize: 18),
                       ),
