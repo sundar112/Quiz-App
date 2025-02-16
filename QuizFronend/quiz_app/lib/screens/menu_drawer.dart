@@ -55,7 +55,9 @@ class MenuDrawer extends StatelessWidget {
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.pop(context),
-                        child: Text("Close"),
+                        child: Text("Close",
+                        style: TextStyle(fontSize: 18, color: Colors.red),
+                        ),
                       ),
                     ],
                   ),
