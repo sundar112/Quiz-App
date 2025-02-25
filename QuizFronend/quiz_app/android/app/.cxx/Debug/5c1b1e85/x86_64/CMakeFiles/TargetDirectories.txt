@@ -1,0 +1,2 @@
+/Users/assaji/Documents/Dhamma Quiz/Quiz-App/QuizFronend/quiz_app/android/app/.cxx/Debug/5c1b1e85/x86_64/CMakeFiles/edit_cache.dir
+/Users/assaji/Documents/Dhamma Quiz/Quiz-App/QuizFronend/quiz_app/android/app/.cxx/Debug/5c1b1e85/x86_64/CMakeFiles/rebuild_cache.dir

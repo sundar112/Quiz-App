@@ -8,7 +8,7 @@ const List<Map<String, dynamic>> questionsData = [
   },
   {
     "category": "बुद्ध चरित",
-    "question": "उनी कुन वंशका थिए?",
+    "question": "गौतम बुद्ध कुन वंशका थिए?",
     "options": ["कोलिय", "शाक्य", "मल्‌ल", "वज्जी"],
     "correctAnswer": "शाक्य",
     "difficulty": "Level 1"
@@ -148,7 +148,7 @@ const List<Map<String, dynamic>> questionsData = [
   },
   {
     "category": "बुद्ध चरित",
-    "question": "सिद्धार्थको सारथी को थिए?",
+    "question": "सिद्धार्थको साथी को थिए?",
     "options": ["कन्थक", "छन्दक", "पन्ठक", "मेन्धक"],
     "correctAnswer": "छन्दक",
     "difficulty": "Level 3"
@@ -212,8 +212,8 @@ const List<Map<String, dynamic>> questionsData = [
   {
     "category": "बुद्ध चरित",
     "question": "बुद्धको पहिलो उपदेशलाई के भनिन्छ?",
-    "options": ["धम्मक्कपवतन सुत्त", "महासमय सुत्त", "अन्नत्तलक्खन सुत्त", "मंगल सुत्त"],
-    "correctAnswer": "धम्मक्कपवतन सुत्त",
+    "options": ["धम्मचक्कपवतन सुत्त", "महासमय सुत्त", "अन्नत्तलक्खन सुत्त", "मंगल सुत्त"],
+    "correctAnswer": "धम्मचक्कपवतन सुत्त",
     "difficulty": "Level 4"
   },
   {
