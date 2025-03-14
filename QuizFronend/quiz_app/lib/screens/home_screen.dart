@@ -117,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       spacing: 10,
                       children: [
                         levelOption("Level 1"),
-                        for (int i = 2; i <= 10; i++) levelOption("Level $i"),
+                        for (int i = 2; i <= 12; i++) levelOption("Level $i"),
                       ],
                     ),
                   ],

@@ -74,21 +74,21 @@ const List<Map<String, dynamic>> questionsData = [
     "question": "सिद्धार्थको विवाह कुन उमेरमा भयो?",
     "options": ["१७", "२०", "१६", "१८"],
     "correctAnswer": "१६",
-    "difficulty": "Level 2"
+    "difficulty": "Level 1"
   },
   {
     "category": "बुद्ध चरित",
     "question": "सिद्धार्थको पत्नीको नाम के थियो?",
     "options": ["महामाया", "बिशाखा", "नन्दा", "यसोधरा"],
     "correctAnswer": "यसोधरा",
-    "difficulty": "Level 2"
+    "difficulty": "Level 1"
   },
   {
     "category": "बुद्ध चरित",
     "question": "सिद्धार्थको छोरा को थिए?",
     "options": ["नन्दकुमार", "कुमार", "महाकुमार", "राहुल"],
     "correctAnswer": "राहुल",
-    "difficulty": "Level 2"
+    "difficulty": "Level 1"
   },
   {
     "category": "बुद्ध चरित",
@@ -144,42 +144,42 @@ const List<Map<String, dynamic>> questionsData = [
     "question": "सिद्धार्थको आफ्नो घोडाको नाम के थियो?",
     "options": ["कन्थक", "छन्दक", "पन्ठक", "मेन्धक"],
     "correctAnswer": "कन्थक",
-    "difficulty": "Level 3"
+    "difficulty": "Level 2"
   },
   {
     "category": "बुद्ध चरित",
     "question": "सिद्धार्थको साथी को थिए?",
     "options": ["कन्थक", "छन्दक", "पन्ठक", "मेन्धक"],
     "correctAnswer": "छन्दक",
-    "difficulty": "Level 3"
+    "difficulty": "Level 2"
   },
   {
     "category": "बुद्ध चरित",
     "question": "बुद्धको मृत्यु (महापरिनिर्वाण) कहाँ भएको थियो?",
     "options": ["लुम्बिनी", "कुशीनगर", "राजगृह", "वैशाली"],
     "correctAnswer": "कुशीनगर",
-    "difficulty": "Level 3"
+    "difficulty": "Level 2"
   },
   {
     "category": "बुद्ध चरित",
     "question": "सिद्धार्थले अरु कुन-कुन गुरुहरूसँग अध्ययन गरे?",
     "options": ["उद्दकरामपुत्र", "भारद्वाज", "तिर्थंकर", "अषितऋषि"],
     "correctAnswer": "उद्दकरामपुत्र",
-    "difficulty": "Level 3"
+    "difficulty": "Level 2"
   },
   {
     "category": "बुद्ध चरित",
     "question": "सिद्धार्थले दुष्कर तपस्या अभ्यास किन छोडे?",
     "options": ["ज्ञनप्राप्त नभएर", "ज्ञनप्राप्त भएर", "सुख प्राप्त भएर", "अल्लछि लागेर"],
     "correctAnswer": "ज्ञनप्राप्त नभएर",
-    "difficulty": "Level 3"
+    "difficulty": "Level 2"
   },
   {
     "category": "बुद्ध चरित",
-    "question": "सिद्धार्थले ज्ञान प्राप्त गर्न कति समय ध्यान गरे?",
+    "question": "सिद्धार्थले कति वर्ष दुष्कर तपस्या गरे?",
     "options": ["५ बर्ष", "६ बर्ष", "७ बर्ष", "८ बर्ष"],
     "correctAnswer": "६ बर्ष",
-    "difficulty": "Level 3"
+    "difficulty": "Level 2"
   },
   {
     "category": "बुद्ध चरित",
@@ -214,7 +214,7 @@ const List<Map<String, dynamic>> questionsData = [
     "question": "बुद्धको पहिलो उपदेशलाई के भनिन्छ?",
     "options": ["धम्मचक्कपवतन सुत्त", "महासमय सुत्त", "अन्नत्तलक्खन सुत्त", "मंगल सुत्त"],
     "correctAnswer": "धम्मचक्कपवतन सुत्त",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
@@ -226,7 +226,7 @@ const List<Map<String, dynamic>> questionsData = [
       "कोण्डञ्य, वप्प, भद्दिय, महानाम, अस्सजि"
     ],
     "correctAnswer": "कोण्डञ्य, वप्प, भद्दिय, महानाम, अस्सजि",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
@@ -238,21 +238,21 @@ const List<Map<String, dynamic>> questionsData = [
       "सारिपुत्र, महामौग्गलान"
     ],
     "correctAnswer": "सारिपुत्र, महामौग्गलान",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
     "question": "भिक्खु आनन्द को थिए?",
     "options": ["बुद्धको प्रमुख सेवक", "ज्ञानमा अग्र", "विनयमा अग्र", "ऋद्धिमा अग्र"],
     "correctAnswer": "बुद्धको प्रमुख सेवक",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
     "question": "बुद्ध शिक्षाको मुख्य उद्देश्य के थियो?",
     "options": ["धन कमाउनु", "निर्वाण प्राप्त गर्नु", "युद्ध जित्नु", "राज्य स्थापना गर्नु"],
     "correctAnswer": "निर्वाण प्राप्त गर्नु",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
@@ -264,21 +264,21 @@ const List<Map<String, dynamic>> questionsData = [
       "युद्ध गर्ने तरिका"
     ],
     "correctAnswer": "न त अत्यधिक कष्ठ, न त भोगविलास",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
     "question": "पालि भाषालाई कुन भाषा पनि भनिन्छ?",
     "options": ["प्राकृत भाषा", "संस्कृत भाषा", "हिन्दी भाषा", "मागधि भाषा"],
     "correctAnswer": "मागधि भाषा",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
     "question": "बुद्धको अन्तिम बर्षवास कुन विहारमा भएको थियो?",
     "options": ["जेतवन विहार", "पुर्वाराम विहार", "वेलुवग्राम", "निग्रोधाराम"],
     "correctAnswer": "वेलुवग्राम",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
@@ -290,7 +290,7 @@ const List<Map<String, dynamic>> questionsData = [
       "दुःख आर्यसत्य, दुःख समुदय, दुःख निरोध, मार्ग आर्यसत्य"
     ],
     "correctAnswer": "दुःख आर्यसत्य, दुःख समुदय, दुःख निरोध, मार्ग आर्यसत्य",
-    "difficulty": "Level 4"
+    "difficulty": "Level 3"
   },
   {
     "category": "बुद्ध चरित",
@@ -309,7 +309,7 @@ const List<Map<String, dynamic>> questionsData = [
       "मैले तपाईंलाई धर्म सिकाएको छु, अब यसलाई अनुसरण गर्नुहोस्"
     ],
     "correctAnswer": "वयधम्मा सङ्खारा अनिच्चाति, अप्पमादेन सम्पादेथ",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
@@ -321,49 +321,49 @@ const List<Map<String, dynamic>> questionsData = [
       "मृत्यु हुनु"
     ],
     "correctAnswer": "जन्म र मृत्युको चक्रबाट मुक्त",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धको पर्थिव शरीरलाई कसरी अन्त्यष्टि गरिएको थियो?",
     "options": ["दाहसंस्कार", "जलसमाधि", "भूसमाधि", "आकाशसमाधि"],
     "correctAnswer": "दाहसंस्कार",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धको शिक्षा संकलित ग्रन्थलाई के भनिन्छ?",
     "options": ["वेद", "त्रिपिटक", "उपनिषद", "पुराण"],
     "correctAnswer": "त्रिपिटक",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "पंचशील भनेको के हो?",
     "options": ["८ शील", "२२७ शील", "५ शील", "१० शील"],
     "correctAnswer": "५ शील",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "त्रिरत्न भन्नाले के बुझिन्छ?",
     "options": ["बुद्ध, धर्म", "बुद्ध, संघ", "बुद्ध, धर्म, संघ", "कुनै पनि होइन"],
     "correctAnswer": "बुद्ध, धर्म, संघ",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धको जन्म कुन महिनामा भएको थियो?",
     "options": ["बैशाख", "जेठ", "असार", "कार्तिक"],
     "correctAnswer": "बैशाख",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धको जन्म कुन तिथिमा भएको थियो?",
     "options": ["बैशाख पूर्णिमा", "जेठ अमावस्या", "असार शुक्ल पक्ष", "कार्तिक पूर्णिमा"],
     "correctAnswer": "बैशाख पूर्णिमा",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
@@ -375,21 +375,21 @@ const List<Map<String, dynamic>> questionsData = [
       "८० वर्षको उमेरमा"
     ],
     "correctAnswer": "८० वर्षको उमेरमा",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धको शिक्षालाई कुन भाषामा लेखियो?",
     "options": ["पालि भाषा", "प्राकृत भाषा", "संस्कृत भाषा", "हिन्दी भाषा"],
     "correctAnswer": "पालि भाषा",
-    "difficulty": "Level 5"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "पहिलो संगायन कहिले भएको थियो?",
     "options": ["ई.पू. 48०", "ई.पू. 48१", "ई.पू. 48२", "ई.पू. 543"],
     "correctAnswer": "ई.पू. 543",
-    "difficulty": "Level 6"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
@@ -401,21 +401,21 @@ const List<Map<String, dynamic>> questionsData = [
       "अनथपिण्डकद्वारा दिइएको भोजन"
     ],
     "correctAnswer": "चुन्दकुमारर्द्वारा दिइएको सुकरमद्दव्दव",
-    "difficulty": "Level 6"
+    "difficulty": "Level 4"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्ध धर्मका प्रमुख ग्रन्थ कुन हुन्?",
     "options": ["वेद", "त्रिपिटक", "बाइबल", "महाभारत"],
     "correctAnswer": "त्रिपिटक",
-    "difficulty": "Level 6"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "त्रिपिटक कति भागमा विभाजित छन्?",
     "options": ["दुई विभाजित", "तीन विभाजित", "चार विभाजित", "पाँच विभाजित"],
     "correctAnswer": "तीन विभाजित",
-    "difficulty": "Level 6"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
@@ -427,7 +427,7 @@ const List<Map<String, dynamic>> questionsData = [
       "योग साधना"
     ],
     "correctAnswer": "भिक्षु-भिक्षुणीहरूका नियम",
-    "difficulty": "Level 6"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
@@ -439,7 +439,7 @@ const List<Map<String, dynamic>> questionsData = [
       "विज्ञानका सिद्धान्त"
     ],
     "correctAnswer": "बुद्धका प्रवचन",
-    "difficulty": "Level 6"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
@@ -451,14 +451,14 @@ const List<Map<String, dynamic>> questionsData = [
       "औषधी विज्ञान"
     ],
     "correctAnswer": "चित्त, चैतसिक, रूप र निव्वाण",
-    "difficulty": "Level 6"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "पिटक कसको प्रमुखत्वमा संकलन गरिएको थियो?",
     "options": ["महाकश्यप", "नागसेन", "अशोक", "अनन्द"],
     "correctAnswer": "महाकश्यप",
-    "difficulty": "Level 6"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
@@ -470,7 +470,7 @@ const List<Map<String, dynamic>> questionsData = [
       "विनय बारे"
     ],
     "correctAnswer": "बुद्धका पूर्वजन्मका कथा",
-    "difficulty": "Level 6"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
@@ -482,49 +482,49 @@ const List<Map<String, dynamic>> questionsData = [
       "वसुभण्डु र दिग्नाग"
     ],
     "correctAnswer": "राजा मिलिन्द र भिनागसेन",
-    "difficulty": "Level 6"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "‘धम्मपद’ कुन ग्रन्थमा समावेश छ?",
     "options": ["विनय पिटक", "सुत्त पिटक", "अभिधम्म पिटक", "जातक कथा"],
     "correctAnswer": "सुत्त पिटक",
-    "difficulty": "Level 7"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "‘विशुद्धिमार्ग’ ग्रन्थका लेखक को हुन्?",
     "options": ["बुद्धघोष", "अश्वघोष", "वसुभण्डु", "नागार्जुन"],
     "correctAnswer": "बुद्धघोष",
-    "difficulty": "Level 7"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "कथावत्थु देशना कसले गरेका थिए?",
     "options": ["वसुभण्डु", "नागार्जुन", "दिग्नाग", "मोग्गलिपुत्ततिस्स"],
     "correctAnswer": "मोग्गलिपुत्ततिस्स",
-    "difficulty": "Level 7"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "‘कथावत्थु’ कुन ग्रन्थमा समावेश छ?",
     "options": ["विनय पिटक", "सुत्त पिटक", "अभिधम्म पिटक", "जातक कथा"],
     "correctAnswer": "अभिधम्म पिटक",
-    "difficulty": "Level 7"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "विश्वको सबैभन्दा अग्लो बुद्ध मूर्ति कहाँ अवस्थित छ?",
     "options": ["नेपाल", "चीन", "म्यानमार", "श्रीलंका"],
     "correctAnswer": "चीन",
-    "difficulty": "Level 7"
+    "difficulty": "Level 5"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "सतिपट्ठान के हो?",
     "options": ["ध्यान तथा सचेतन (Mindfulness)", "योग अभ्यास", "कर्मकाण्ड", "दर्शनशास्त्र"],
     "correctAnswer": "ध्यान तथा सचेतन (Mindfulness)",
-    "difficulty": "Level 7"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
@@ -536,7 +536,7 @@ const List<Map<String, dynamic>> questionsData = [
       "कुनै पनि होइन"
     ],
     "correctAnswer": "वेदनानुपस्सना, चित्तानुपस्सना",
-    "difficulty": "Level 7"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
@@ -548,56 +548,56 @@ const List<Map<String, dynamic>> questionsData = [
       "कामच्छन्द, व्यापाद, थिनमिद्ध, उद्धच्चकुक्कुच्च, विचिकिच्छा"
     ],
     "correctAnswer": "कामच्छन्द, व्यापाद, थिनमिद्ध, उद्धच्चकुक्कुच्च, विचिकिच्छा",
-    "difficulty": "Level 7"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "प्रथम ध्यान (First Jhana) ध्यानको पहिलो स्तर हो, जसमा वितक्क (Vitakka), विचार (Vicāra), पीति (Pīti), सुख (Sukha) हो भने बाँकी कुन हो?",
     "options": ["उपेक्खा", "समाधि", "सील", "एकागता"],
     "correctAnswer": "एकागता",
-    "difficulty": "Level 7"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "भगवान बुद्धले संसारमा पाँच दुर्लभहरू बताउनु भएका छन्। ती मध्ये १. बुद्धको जन्म दुर्लभ २. मानव जन्म प्राप्त गर्नु दुर्लभ ३. सधर्म सुन्न पाउनु दुर्लभ ४. धर्ममा श्रद्धा उत्पन्न हुनु दुर्लभ हो भने बाँकी कुन हो?",
     "options": ["राजा हुनु", "रानी हुनु", "देवता हुनु", "प्रवजित हुनु"],
     "correctAnswer": "प्रवजित हुनु",
-    "difficulty": "Level 7"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "सारिपुत्रलाई बुद्धले के उपाधि दिएका थिए?",
     "options": ["धर्मसेनापति", "श्रमणश्रेष्ठ", "संघनायक", "महामित्र"],
     "correctAnswer": "धर्मसेनापति",
-    "difficulty": "Level 8"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धशासनमा धर्म भण्डारिक भनेर कस्लाई चिनिन्छ?",
     "options": ["राहुल", "देवदत्त", "आनन्द", "सारिपुत्र"],
     "correctAnswer": "आनन्द",
-    "difficulty": "Level 8"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "ऋद्धि चमत्कार गर्नमा अग्र को थिए?",
     "options": ["उपालि", "मौद्गल्यायन", "अशोक", "राहुल"],
     "correctAnswer": "मौद्गल्यायन",
-    "difficulty": "Level 8"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धधर्ममा महाउपासिका को थिइन्?",
     "options": ["महाप्रजापति गौतमी", "विशाखा", "कुन्तिदेवी", "आम्रपाली"],
     "correctAnswer": "विशाखा",
-    "difficulty": "Level 8"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्ध सासनमा पहिलो भिक्षुणी को हुन?",
     "options": ["आनन्द", "महाप्रजापति गौतमी", "यशोधरा", "विशाखा"],
     "correctAnswer": "महाप्रजापति गौतमी",
-    "difficulty": "Level 8"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
@@ -609,175 +609,601 @@ const List<Map<String, dynamic>> questionsData = [
       "बुद्धका शिक्षा लेखेर"
     ],
     "correctAnswer": "पूर्वाराम विहार निर्माण",
-    "difficulty": "Level 8"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "सिद्धार्थलाई खीर भोजन दान गर्ने दाता को हुन?",
     "options": ["विशाखा", "यशोधरा", "आम्रपाली", "सुजाता"],
     "correctAnswer": "सुजाता",
-    "difficulty": "Level 8"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धले अन्तिम उपदेश कसलाई दिएका थिए?",
     "options": ["आनन्द", "चुण्ड", "सुभद्र", "उपालि"],
     "correctAnswer": "सुभद्र",
-    "difficulty": "Level 8"
+    "difficulty": "Level 6"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्ध शासनका प्रथम सामणेर को थिए?",
     "options": ["राहुल", "उपालि", "अशोक", "कौण्डिन्य"],
     "correctAnswer": "राहुल",
-    "difficulty": "Level 8"
+    "difficulty": "Level 7"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "बुद्धको शिक्षालाई संकलन गर्न पहिलो बौद्ध संगीति कहाँ भएको थियो?",
     "options": ["कुशीनगर", "राजगृह", "सारनाथ", "वैशाली"],
     "correctAnswer": "राजगृह",
-    "difficulty": "Level 8"
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "परमार्थ धर्म कति वटा छन्?",
+    "options": ["१० वटा", "४ वटा", "१२ वटा", "२ वटा"],
+    "correctAnswer": "४ वटा",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "परमार्थ धर्म के के हुन्?",
+    "options": ["चित्त, विज्ञान, रूप, वेदना", "संज्ञा, अकुशल, वेदना, निर्वाण", "चित्त, चेत्तसिक, रूप, निर्वाण", "कुशल, अकुशल, क्रिया, विपाक"],
+    "correctAnswer": "चित्त, चेत्तसिक, रूप, निर्वाण",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "भूमि अनुसार चित्त कति प्रकारका छन्?",
+    "options": ["४", "2", "10", "15"],
+    "correctAnswer": "४",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अकुशल चित्त कति प्रकारका छन्?",
+    "options": ["४", "१०", "२०", "१२"],
+    "correctAnswer": "१२",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अकुशल चित्त कुन कुन हो?",
+    "options": ["अलोभ, अदोष, अमोह", "लोभ, अदोष, अमोह", "अलोभ, दोष, अमोह", "लोभ, दोष, मोह"],
+    "correctAnswer": "लोभ, दोष, मोह",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "लोभमूल चित्तमा उपेक्खासहगत चित्त कति वटा छन्?",
+    "options": ["४", "१२", "१०", "१५"],
+    "correctAnswer": "४",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "लोभमूल चित्तमा दिट्ठिगतसम्पयुक्त चित्त कति वटा छन्?",
+    "options": ["१२", "१५", "४", "१४"],
+    "correctAnswer": "४",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "दोषमूल चित्तमा पटिघसम्पयुक्त चित्त कति वटा छन्?",
+    "options": ["१३", "२", "१०", "१४"],
+    "correctAnswer": "२",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "तल मध्य कुन चित्त मोहमूल चित्त हो?",
+    "options": ["क)  उपेक्खासहगत विचिकिच्छासम्पयुक्त चित्त", "ख) उपेक्खासहगत उद्धच्चसम्पयुक्त चित्त", "ग) क र ख दुबै होइन", "घ) क र ख दुबै हो"],
+    "correctAnswer": "क र ख दुबै हो",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अकुशलचित्तलाई वेदना अनुसार कति प्रकारमा भेद गरिएको छ?",
+    "options": ["३", "१५", "१०", "२०"],
+    "correctAnswer": "३",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अकुशल चित्त १२ वटामा उपेक्खासहगत चित्त कति वटा छन्?",
+    "options": ["४", "६", "२", "१०"],
+    "correctAnswer": "६",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अकुशल चित्त १२ वटामा दोमनस्ससहगत चित्त कति वटा छन्?",
+    "options": ["२", "१०", "४", "१२"],
+    "correctAnswer": "२",
+    "difficulty": "Level 7"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अकुशल चित्त १२ वटामा सोमनस्ससहगत चित्त कति वटा छन्?",
+    "options": ["२", "४", "१२", "१०"],
+    "correctAnswer": "४",
+    "difficulty": "Level 7"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "सिद्धार्थको गर्भ प्रवेश कहिले भएको थियो?",
     "options": ["बैशाख पूर्णिमा", "जेष्ठ पूर्णिमा", "अषाढ पूर्णिमा", "फागून पूर्णिमा"],
     "correctAnswer": "अषाढ पूर्णिमा",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "सिद्धार्थले देखेको चार निमित मध्ये पहिलो निमित के थियो?",
     "options": ["बुढो मान्छे", "रोगी मान्छे", "भिक्खु", "मरेको मान्छे"],
     "correctAnswer": "बुढो मान्छे",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "सिद्धार्थको गृहत्याग कुन दिन भएको थियो?",
     "options": ["बैशाख पूर्णिमा", "जेष्ठ पूर्णिमा", "अषाढ पूर्णिमा", "फागून पूर्णिमा"],
     "correctAnswer": "अषाढ पूर्णिमा",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "प्रथम द्वेवाचिक उपासकको नाम के थियो?",
     "options": ["अनाथपिण्डिक", "विशाखा", "तपस्सु र भल्लुक", "यशकुमार"],
     "correctAnswer": "तपस्सु र भल्लुक",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "प्रथम त्रैवाचिक उपासिकाको नाम के थियो?",
     "options": ["विशाखा", "मल्लिका", "उत्तरा", "यशकुमारको माता"],
     "correctAnswer": "यशकुमारको माता",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "वेणुवन विहार कसले दान दिएको थियो?",
     "options": ["राजा बिम्बिसार", "शुद्धोदन महाराज", "कोसल महाराज", "अशोक महाराज"],
     "correctAnswer": "राजा बिम्बिसार",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "सारिपूत्र भन्तेले कसको मार्फतबाट श्रोतापन्नफल प्राप्त गर्नु भएको थियो?",
     "options": ["भद्दिय", "कोण्डन्य", "अस्सजित", "भगवान बुद्ध"],
     "correctAnswer": "अस्सजित",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "कपिलवस्तुमा भएको विहारको नाम के हो?",
     "options": ["जेतवन", "निग्रोधाराम", "वेणुवन", "आनन्द कूटी"],
     "correctAnswer": "निग्रोधाराम",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "अनाथपिण्डिकले दान दिएको विहारको नाम के थियो?",
     "options": ["जेतवन", "वेणुवन", "वैशाली", "पुब्बाराम"],
     "correctAnswer": "जेतवन",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "अनाथपिण्डिकले कति धन खर्च गरी जेतवन विहार दान दिएको थिए?",
     "options": ["२९ कोटी", "५४ कोटी", "७० कोटी", "८० कोटी"],
     "correctAnswer": "५४ कोटी",
-    "difficulty": "Level 9"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "भगवान बुद्धले सातौँ वर्षावास कहाँ बिताउनु भएको थियो?",
     "options": ["तावतिंस", "निग्रोधाराम", "वेणुवनाराम", "पारिलेयक वन"],
     "correctAnswer": "तावतिंस",
-    "difficulty": "Level 10"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "भगवान बुद्धले एक्ल वर्षावास कहाँ बिताउनु भएको थियो?",
     "options": ["जेतवन", "आलवक देश", "पारिलेयक वन", "घोषिताराम"],
     "correctAnswer": "पारिलेयक वन",
-    "difficulty": "Level 10"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "विसाखा उपासिका कति वर्षको उमेरमा श्रोतापन्नफल प्राप्त गर्नु भएको थियो?",
     "options": ["७ वर्ष", "१६ वर्ष", "३० वर्ष", "५० वर्ष"],
     "correctAnswer": "७ वर्ष",
-    "difficulty": "Level 10"
+    "difficulty": "Level 8"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "निग्रोधाराम विहार कसले दान दिएको थियो?",
     "options": ["विशाखा", "राहुल", "कालुदायी", "शाक्यहरू"],
     "correctAnswer": "शाक्यहरू",
-    "difficulty": "Level 10"
+    "difficulty": "Level 9"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "भगवान बुद्धले सबैभन्दा धेरै वर्षावास कुन ठाउँमा बिताउनु भएको थियो?",
     "options": ["तावतिंस", "पारिलेयक", "जेतवन", "पुब्बाराम"],
     "correctAnswer": "जेतवन",
-    "difficulty": "Level 10"
+    "difficulty": "Level 9"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "मृगारमाता भनी कसलाई चिनिन्छ?",
     "options": ["विशाखा", "उत्तरा", "यशोधारा", "प्रजापति गौतमी"],
     "correctAnswer": "विशाखा",
-    "difficulty": "Level 10"
+    "difficulty": "Level 9"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "धुतङ्गधारीहरूमा अग्र स्थान प्राप्त गर्ने भिक्षु को हुन्?",
     "options": ["अनुरूद्ध महास्थविर", "महाकाश्यप महास्थविर", "पिण्डोलभारद्वाज महास्थविर", "सारिपुत्र महास्थविर"],
     "correctAnswer": "महाकाश्यप महास्थविर",
-    "difficulty": "Level 10"
+    "difficulty": "Level 9"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "वीर्यवानहरूमा अग्रस्थान प्राप्त गर्ने भिक्षुको नाम के हो?",
     "options": ["सोण कोलिंविस महास्थविर", "देवदत्त", "महाकात्यान महास्थविर", "कुमारकाश्यप महास्थविर"],
     "correctAnswer": "सोण कोलिंविस महास्थविर",
-    "difficulty": "Level 10"
+    "difficulty": "Level 9"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "ध्यानीहरूमा अग्रस्थान प्राप्त गर्ने भिक्षिणी को नाम के हो?",
     "options": ["पटाचार", "सोणा", "नन्दा", "धम्मदिन्ना"],
     "correctAnswer": "नन्दा",
-    "difficulty": "Level 10"
+    "difficulty": "Level 9"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "रुपावचर चित्त १५ वटामा सुखसहगता चित्त कति वटा छन्?",
+    "options": ["१५", "३", "१०", "१२"],
+    "correctAnswer": "१२",
+    "difficulty": "Level 9"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अरुपावचर चित्त कति वटा छन्?",
+    "options": ["१०", "१२", "९", "२७"],
+    "correctAnswer": "१२",
+    "difficulty": "Level 9"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "महग्गत चित्त कति वटा छन्?",
+    "options": ["२७", "३०", "२४", "१५"],
+    "correctAnswer": "२७",
+    "difficulty": "Level 9"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "महग्गत चित्त कुन कुन हो?",
+    "options": ["रुपावचर र सोभण", "रुपावचर र अरुपावचर", "अरुपावचर र सोभण", "सोभण र असोभण"],
+    "correctAnswer": "रुपावचर र अरुपावचर",
+    "difficulty": "Level 9"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "महग्गत चित्तमा पञ्चम ध्यान चित्त कति वटा छन्?",
+    "options": ["१५", "१२", "३", "१०"],
+    "correctAnswer": "१५",
+    "difficulty": "Level 9"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "महग्गत चित्तमा विपाक चित्त कति वटा छन्?",
+    "options": ["१०", "१२", "९", "१४"],
+    "correctAnswer": "९",
+    "difficulty": "Level 9"
   },
   {
     "category": "बुद्ध धर्म",
     "question": "प्रथम त्रैवाचिक उपासकको नाम के थियो?",
     "options": ["अनाथपिण्डिक", "कोशल राजा", "बिम्बिसार राजा", "यशकुमार"],
     "correctAnswer": "यशकुमार",
+    "difficulty": "Level 9"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "आकासानञ्चायतन कुन चित्त हो?",
+    "options": ["कामावचर", "रुपावचर", "लोकुत्तर", "अरुपावचर"],
+    "correctAnswer": "अरुपावचर",
     "difficulty": "Level 10"
-  }
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "आरम्मणादि भेदले अरूपावचर चित्त कति वटा छन्?",
+    "options": ["५", "१२", "१०", "४"],
+    "correctAnswer": "४",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "लोकुत्तर चित्त संक्षिप्तमा कति वटा छन्?",
+    "options": ["१०", "१२", "८", "१४"],
+    "correctAnswer": "८",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "लौकिक चित्त कति वटा छन्?",
+    "options": ["८९", "८१", "१२९", "१८०"],
+    "correctAnswer": "८१",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "लौकिक चित्त ८१ वटामा कुसल चित्त कति वटा छन्?",
+    "options": ["१२", "२१", "१७", "२४"],
+    "correctAnswer": "१७",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "लौकिक चित्त ८१ वटामा विपाक चित्त कति वटा छन्?",
+    "options": ["१२", "३२", "१७", "२१"],
+    "correctAnswer": "३२",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "लौकिक चित्त ८१ मा क्रिया चित्त कति वटा छन्?",
+    "options": ["१७", "३२", "१८", "२०"],
+    "correctAnswer": "२०",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "चित्त संक्षिप्त ८९ वटामा कृसल चित्त कति वटा छन्?",
+    "options": ["२१", "३२", "१९", "४०"],
+    "correctAnswer": "२१",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "चित्त संक्षिप्त ८९ वटामा विपाक चित्त कति वटा छन्?",
+    "options": ["१२", "३६", "२१", "२०"],
+    "correctAnswer": "३६",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "चित्त संक्षिप्त ८९ वटामा क्रिया चित्त कति वटा छन्?",
+    "options": ["२१", "२८", "२०", "४०"],
+    "correctAnswer": "२०",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "चित्त विस्तृतमा मार्ग चित्त कति वटा छन्?",
+    "options": ["२१", "२९", "४०", "५०"],
+    "correctAnswer": "२९",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "लोकुत्तर चित्त विस्तृतमा विपाक चित्त कति वटा छन्?",
+    "options": ["४०", "१९", "२०", "५०"],
+    "correctAnswer": "२०",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "चित्त विस्तृतमा अकुसल चित्त कति वटा छन्?",
+    "options": ["४०", "१४", "१५", "१२"],
+    "correctAnswer": "१२",
+    "difficulty": "Level 10"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अहेतुक चित्त कति वटा छन्?",
+    "options": ["१२", "५४", "२०", "१८"],
+    "correctAnswer": "१८",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अहेतुक चित्तहरू कुन कुन हो?",
+    "options": [
+      "अहेतुक कुशल विपाक चित्त ७ वटा",
+      "अहेतुक अकुशल विपाक चित्त ८ वटा",
+      "अहेतुक क्रिया चित्त ३ वटा",
+      "माथिका सबै"
+    ],
+    "correctAnswer": "माथिका सबै",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अहेतुक चित्त १८ वटामा दुखसहगत चित्त कति वटा छन्?",
+    "options": ["१०", "१", "१८", "२०"],
+    "correctAnswer": "१",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अहेतुक चित्त १८ वटामा सोमनस्ससहगत चित्त कति वटा छन्?",
+    "options": ["२", "१८", "१५", "१४"],
+    "correctAnswer": "२",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "अहेतुक चित्त १८ वटामा उपेक्खासहगत चित्त कति वटा छन्?",
+    "options": ["२", "१८", "२०", "१४"],
+    "correctAnswer": "१४",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "असोभण चित्त कति वटा छन्?",
+    "options": ["५४", "१८", "१२१", "३०"],
+    "correctAnswer": "३०",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "असोभण चित्त के के हुन्?",
+    "options": ["अकुशल र अहेतुक", "अकुशल र रूपावचर", "रूपावचर र अरूपावचर", "रूपावचर र अहेतुक"],
+    "correctAnswer": "अकुशल र अहेतुक",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "असोभण चित्त ३० वटामा सोमनस्ससहगत चित्त कति वटा छन्?",
+    "options": ["१०", "१२", "१९", "६"],
+    "correctAnswer": "६",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "असोभण चित्त ३० वटामा दोमनस्ससहगत चित्त कति वटा छन्?",
+    "options": ["२", "१२", "१९", "२४"],
+    "correctAnswer": "२",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "असोभण चित्त ३० वटामा उपेक्खासहगत चित्त कति वटा छन्?",
+    "options": ["२०", "१४", "३०", "१८"],
+    "correctAnswer": "२०",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "सोभण चित्त संक्षिप्तमा कति वटा छन्?",
+    "options": ["२०", "८१", "५९", "९१"],
+    "correctAnswer": "५९",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर सोभण चित्त कति वटा छन्?",
+    "options": ["१८", "१५", "१२", "२४"],
+    "correctAnswer": "२४",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर सोभण चित्तमा ञाणसम्पयुक्त चित्त कति वटा छन्?",
+    "options": ["१२", "२४", "१०", "५४"],
+    "correctAnswer": "१२",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त कति वटा छन्?",
+    "options": ["८१", "१२१", "५४", "१२"],
+    "correctAnswer": "५४",
+    "difficulty": "Level 11"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा कुशल चित्त कति वटा छन्?",
+    "options": ["८", "२", "५४", "१२१"],
+    "correctAnswer": "८",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा अकुशल चित्त कति वटा छन्?",
+    "options": ["१०", "१४", "१८", "१२"],
+    "correctAnswer": "१२",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा विपाक चित्त कति वटा छन्?",
+    "options": ["५०", "२३", "११", "२४"],
+    "correctAnswer": "२३",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा क्रिया चित्त कति वटा छन्?",
+    "options": ["५०", "२४", "११", "१६"],
+    "correctAnswer": "११",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा सोमनस्ससहगत चित्त कति वटा छन्?",
+    "options": ["३२", "१२", "२", "१८"],
+    "correctAnswer": "१८",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा उपेक्खासहगत चित्त कति वटा छन्?",
+    "options": ["१२", "१८", "३२", "१४"],
+    "correctAnswer": "३२",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा ससंखारिक चित्त कति वटा छन्?",
+    "options": ["१२", "१५", "१४", "१७"],
+    "correctAnswer": "१७",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा असंखारिक चित्त कति वटा छन्?",
+    "options": ["१२", "१५", "१४", "१७"],
+    "correctAnswer": "१७",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "कामावचर चित्त ५४ वटामा ससंखारिक र असंखारिक दुबै नभएका चित्त कति वटा छन्?",
+    "options": ["२०", "२४", "५४", "४०"],
+    "correctAnswer": "२०",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "वितक्क, विचार, पीति, सुख, एकग्गता कुन ध्यान हो?",
+    "options": ["तृतीय ध्यान", "पञ्चम ध्यान", "द्वितीय ध्यान", "प्रथम ध्यान"],
+    "correctAnswer": "प्रथम ध्यान",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "रूपावचर चित्त जम्मा कति वटा छन्?",
+    "options": ["१०", "८", "१५", "१४"],
+    "correctAnswer": "१५",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "सुख र एकाग्गता कुन ध्यान हो?",
+    "options": ["पञ्चम ध्यान", "चतुत्थ ध्यान", "द्वितीय ध्यान", "प्रथम ध्यान"],
+    "correctAnswer": "चतुत्थ ध्यान",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "उपेक्खा र एकाग्गता कुन ध्यान हो?",
+    "options": ["पञ्चम ध्यान", "प्रथम ध्यान", "द्वितीय ध्यान", "चतुत्थ ध्यान"],
+    "correctAnswer": "पञ्चम ध्यान",
+    "difficulty": "Level 12"
+  },
+  {
+    "category": "बुद्ध धर्म",
+    "question": "रूपावचर चित्त १५ वटामा उपेक्खासहगता चित्त कति वटा छन्?",
+    "options": ["३", "१२", "१०", "१४"],
+    "correctAnswer": "३",
+    "difficulty": "Level 12"
+  },
+
 
 ];
